@@ -6,70 +6,65 @@
 <body>
 
   <?php
-    $nom= ' Pèle';
-    $prénom='Sarah';
-    $age= '18';
-
-    echo "Bonjour ";
+    $nom = 'Dupont';
+    $prénom = 'Jean';
+    echo "Bonjour " . $nom . " " . $prénom;
+    echo "<br/>";
+    $age = 33;
+    echo "J'ai $age ans";
+    echo 'J\'ai $age ans';
     echo "<br>";
-    echo $prénom;
-    echo $nom;
-    echo "<br>";
-    echo  " j'ai $age ans";
-    echo "<br>";
-
-    if ($age>=18) {
-        echo " majeur";
-    } elseif ($age>=15) {
-        echo " ado";
+    if ($age > 18 && $prénom == "Jean") {
+        echo "Majeur";
+    } elseif($age >= 15) {
+    	echo "Ado";
     } else {
-        echo " enfant";
+    	echo "Enfant";
     }
-    
     $age2 = 33;
-    echo "<br>";
+    echo"<br>";
     echo $age <=> $age2;
-    echo "<br>";
+    echo"<br>";
     echo 1 <=> 2;
-    echo "<br>";
+    echo"<br>";
     echo 2 <=> 1;
-    echo "<br>";
-
+    echo"<br>";
+    // Déclaration de variables
     $a = null;
-
     $c = 5;
-    $b = 2;
+    $b;
     $d;
-
     echo $a ?? $b ?? $c ?? $d;
-
-    //arithmetique
-
     echo "<br>";
-    $a=12;
-    $b=$a+25;
-
-    echo "B vaut $b et A vaut $a";
-
+    // L'arithmétique :
+    $a = 5;
+    $b = $a + 5;
+    echo "b vaut $b et a vaut $a";
     echo "<br>";
-    $b = $a += 25;
-
-    echo "B vaut $b et A vaut $a";
-
+    $b = $a += 5; // $a = $a + 5
+    echo "b vaut $b et a vaut $a";
+    $a++;  // $a = $a + 1
+    echo "a vaut $a <br>";
+    ++$a;  // $a = $a + 1
+    echo "a vaut $a <br>";
+    // différence :
+    echo "avant a vaut " . ++$a;
+    echo " après a vaut " . $a;
     echo "<br>";
-    $a++;
-    echo "A vaut $a <br>";
-
-    ++$a;
-    echo "A vaut $a <br>";
-
-    echo "avant A valais" .  ++$a;
-    echo "<br>";
-    echo "aprés A vaut" .  $a;
-    echo "<br>";
-    echo "avant A valais" .  $a++;
-    echo "<br>";
-    echo "aprés A vaut" .  $a;
+    echo "avant a vaut " . $a++;
+    echo " après a vaut " . $a;
+    echo "<pre>";
+    print_r ($a);
+    echo"</pre>";
+    echo "<pre>";
+    var_dump($a);
+    echo "ce code n'est pas interprété\n\ndu tout";
+    echo "</pre>";
+    $array = ["couleur" => "rouge", "taille" => 1.70];
+    echo "<pre>";
+    var_dump($array);
+    echo "</pre>";
+die ("fini");
   ?>
 
 </body>
