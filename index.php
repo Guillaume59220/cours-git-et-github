@@ -70,8 +70,6 @@
     echo "avant A valais" .  $a++;
     echo "<br>";
     echo "aprés A vaut" .  $a;
-
-
   ?>
 
 </body>
