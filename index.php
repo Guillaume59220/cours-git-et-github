@@ -6,8 +6,8 @@
 <body>
 
   <?php
-    $nom = 'Dupont';
-    $prénom = 'Jean';
+    $nom = 'Pèle';
+    $prénom = 'Sarah';
     echo "Bonjour " . $nom . " " . $prénom;
     echo "<br/>";
     $age = 33;
